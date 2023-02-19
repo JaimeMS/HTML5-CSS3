@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo 1</title>
+	<style type="text/css">
+		* { box-sizing:border-box; }
+		body, .menu { margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; }
+		.menu { list-style-type:none; }
+		.menu li a {
+			display: block;
+			padding: 10px;
+			background-color: #ccc;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			color: black;
+		}
+		.menu li a:hover { color:white; background-color:#aaa; }
+		.linha {
+			display: flex;
+			display: -webkit-flext;
+		}
+		.coluna {			
+			padding: 10px;
+			height: auto;
+			flex: 1;
+			-webkit-flex: 1;
+  			-ms-flex: 1;
+			background-color: #eee;
+			border: 1px solid black;
+		}
+		.cabecalho, .rodape { text-align:center; background-color:#bbb; padding: 10px; }
+		@media (max-width: 800px) {
+			.linha { 
+				-webkit-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<h1>Cabeçalho</h1>
+	</header>
+	<div class="linha">
+		<nav class="coluna">
+			<ul class="menu">
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</nav>
+		<section class="coluna">
+			<header>
+				<h1>Meio</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</section>
+		<aside class="coluna">
+			<h1>Direita</h1>
+		</aside>
+	</div>
+	<footer class="rodape">
+		<p>Rodapé</p>
+	</footer>
+</body>
+</html>
