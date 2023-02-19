@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo 4</title>
+	<style type="text/css">
+		* { box-sizing:border-box; }
+		body { margin:0; padding:0; font-family:Arial, Helvetiva, sans-serif; }
+		.cabecalho, .rodape { 
+			padding: 30px;
+			text-align: center;
+			background-color: #eee; 
+			float: left;
+			width: 100%;
+		}
+		.linha:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.coluna {
+			float: left;
+			width: 33.33%;
+			height: 475px;
+			padding: 10px;
+			background-color: #fff;
+			border: 1px solid blak;
+		}
+		.menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu li a {
+			text-decoration: none;
+			display: block;
+			padding: 14px 16px;
+			color: whitesmoke;
+			background-color: #aaa;
+			border-radius: 5px;
+			margin-bottom: 5px;
+		}
+		.menu li a:hover { background-color:#bbb; }
+
+		@media only screen and (max-width: 600px){
+			.coluna { width:100%; }
+		}
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<h1>Cabeçalho</h1>
+	</header>
+	<div class="linha">
+		<nav class="coluna">
+			<ul class="menu">
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</nav>
+		<section class="coluna">
+			<h1>Meio</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<aside class="coluna">
+			<h3>Direita</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</aside>
+	</div>
+
+	<footer class="rodape">
+		<p>Rodapé</p>
+	</footer>
+</body>
+</html>
