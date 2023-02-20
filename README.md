@@ -59,6 +59,15 @@ Exemplos simples de como criar layouts com HTML5 e CSS3 usando três técnicas d
 - Site utilizado para verificar o estágio que determinada tecnologia se encontra
 [Can I use](https://caniuse.com/)
 
+## Estágio de Padronização
+| Fase     |  Nome       | Descrição   |
+| -------  | -------  | -------- |
+| WD | Working Draft | Primeira fase, é uma idéia de um novo recurso  |
+| LC    | Last Call | Quando a idéia já está madura o suficiente para ser analisada como uma recomendação       |
+| CR      | Candidate Recommendation | Quando todas as correções e ajustes são realizados, mas pode haver ajustes minimos   |
+| PR     | Proposed | Indica que as implementações já foram testadas e serão submetidas para homologação    |
+| REC     | W3C Recommendation | Indica que foi aaprovada pela W3C    |
+
 ## Prefixos Proprietários
 | Prefixo  | Motor de Renderização   |
 | -------  | -------- |
