@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo 2</title>
+	<style type="text/css">
+		* { box-sizing:border-box; }
+		body { margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; }
+		.container {
+			display: grid;
+			grid-template-areas: 'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho '
+			'esquerda meio meio meio meio  direita'
+			'rodape rodape rodape rodape rodape rodape ';
+		}
+		.cabecalho {
+			grid-area: cabecalho;
+			padding: 15px;
+			text-align: center;
+			background-color: #888;
+		}
+		.rodape {
+			grid-area: rodape;
+			padding: 15px;
+			text-align: center;
+			background-color: #888;
+		}
+		.esquerda, .meio, .direita { padding:15px; background-color:#ccc; }
+		.esquerda { grid-area:esquerda; }
+		.meio { grid-area:meio; background-color: #ddd;}
+		.direita { grid-area:direita; }
+
+		@media only screen and (max-width: 600px) {
+			.container {
+				grid-template-areas: 'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho'
+				'esquerda esquerda esquerda esquerda esquerda esquerda'
+				'meio meio meio meio meio meio'
+				'direita direita direita direita direita direita'
+				'rodape rodape rodape rodape rodape rodape';
+			}
+		}
+	</style>
+</head>
+<body>
+	<main role="main" class="container">
+		<header class="cabecalho">
+			<h1>Cabeçalho</h1>
+		</header>
+		<nav class="esquerda">
+			<h1>Esquerda</h1>
+		</nav>
+		<section class="meio">
+			<article>
+				<header>
+					<h1>Meio</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</header>
+			</article>
+		</section>
+		<aside class="direita">
+			<h1>Direita</h1>
+		</aside>
+		<footer class="rodape">
+			<h2>Rodapé</h2>
+		</footer>
+	</main>
+</body>
+</html>
