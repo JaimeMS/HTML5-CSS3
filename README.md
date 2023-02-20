@@ -60,7 +60,7 @@ Exemplos simples de como criar layouts com HTML5 e CSS3 usando três técnicas d
 [Can I use](https://caniuse.com/)
 
 ## Estágio de Padronização
-| Fase     |  Nome       | Descrição   |
+| Sigla     |  Fase       | Descrição   |
 | -------  | -------  | -------- |
 | WD | Working Draft | Primeira fase, é uma idéia de um novo recurso  |
 | LC    | Last Call | Quando a idéia já está madura o suficiente para ser analisada como uma recomendação       |
