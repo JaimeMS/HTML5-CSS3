@@ -60,7 +60,11 @@ Exemplos simples de como criar layouts com HTML5 e CSS3 usando três técnicas d
 [Can I use](https://caniuse.com/)
 
 ## Prefixos Proprietários
-* -webkit- 
-* -moz-
-* -o-
-* -ms- 
+| Prefixo  | Motor de Renderização   |
+| -------  | -------- |
+| -webkit- | WebKit    |
+| -moz-    | Mozilla Foundation        |
+| -o-      | Opera   |
+| -ms-     | Trident (a.k.a MSHTML)    |
+ 
+
