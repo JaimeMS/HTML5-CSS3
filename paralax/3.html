@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo 3</title>
+	<style type="text/css">
+		/* 1 - RESET NA PÁGINA */
+		* { margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; }
+		body { width:100%; }
+		.parallax {
+			/* 2 - DEFINIR O TAMANHO */
+			height: 100%;
+
+			/* 3 - CRIAR O EFEITO PARALAX */
+			background-attachment: fixed;	
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		 /* 4 - INSERIR AS IMAGENS */
+		#img1 { background-image: url("img/HTML5-CSS3.jpg"); }
+		#img2 {	background-image: url("img/w.jpg"); }
+
+		/* ESTILIZAR O CONTEÚDO */
+		.parallax article {
+			width:70%;
+			height:500px;
+			text-align:center;
+			margin:0 auto;
+			padding:20% 0 0 0;
+			position:relative;
+		}
+		.parallax h1 { font-size:40px; }
+		.parallax p {
+			line-height:1.5em;
+			margin-top:15px;
+			font-size:20px;
+		}
+		.parallax article div {
+			background-color: rgba(10,23,55,0.5);
+			padding: 10px;
+			border-radius: 5px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<section class="parallax" id="img1">
+		<article>
+			<div>
+				<h1>HTML5 E CSS3</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</article>
+	</section>
+	<section class="parallax" id="img2">
+		<article>
+			<div>
+				<h1>WINDOWS</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
