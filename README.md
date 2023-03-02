@@ -55,6 +55,14 @@ Exemplos simples de como criar layouts com HTML5 e CSS3 usando três técnicas d
 @import url('meuCss.css');
 ```
 
+## Imagem
+- **JPG:** _Padrão para utilização de imagens_
+- **GIF:** _Pequenas imagens e animações_
+- **PNG:** _Para transparência de imagem_
+- **WebP:** _31% mais leve que o JPG e permite transparência e animações_
+- **BMP:** _Muito pesado_
+- **SVG:** _Redimenciona a imagem sem perder a resolução_
+
 ## Padronização da W3C
 - Site utilizado para verificar o estágio que determinada tecnologia se encontra
 [Can I use](https://caniuse.com/)
